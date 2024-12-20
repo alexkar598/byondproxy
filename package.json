@@ -1,0 +1,19 @@
+{
+  "name": "byondproxy",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/debug": "^4.1.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.2",
+    "debug": "^4.4.0",
+    "dotenv": "^16.4.7",
+    "supports-color": "^9.4.0",
+    "winreg": "^1.2.5"
+  }
+}
