@@ -6,8 +6,8 @@ import { Direction } from "../direction";
 import { buildMessage } from "../messages/_registry";
 import { RUNSUB } from "../runsub";
 
-// Type[u16] + Size[u16] + Payload[Size]
-const MAX_MSG_SIZE = 2 + 2 + 65_535;
+// SEQ[u16] + Type[u16] + Size[u16] + Payload[Size]
+const MAX_MSG_SIZE = 2 + 2 + 2 + 65_535;
 
 export abstract class NetStream {
   private readonly buffer = Buffer.alloc(MAX_MSG_SIZE);
