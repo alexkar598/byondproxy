@@ -1,0 +1,12 @@
+[package]
+name = "baf-lib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+hex = "0.4.3"
+assert_matches = "1.5.0"
